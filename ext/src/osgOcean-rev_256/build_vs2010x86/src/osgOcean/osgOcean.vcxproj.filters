@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\osgOcean\Cylinder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgOcean\DistortionSurface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgOcean\FFTOceanTechnique.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgOcean\FFTOceanSurface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgOcean\FFTOceanSurfaceVBO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgOcean\FFTSimulation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgOcean\GodRays.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgOcean\GodRayBlendSurface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgOcean\MipmapGeometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgOcean\MipmapGeometryVBO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgOcean\OceanScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgOcean\OceanTechnique.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgOcean\OceanTile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgOcean\ScreenAlignedQuad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgOcean\ShaderManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgOcean\SiltEffect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgOcean\WaterTrochoids.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgOcean\Version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\src\osgOcean\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\include\osgOcean\Cylinder">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgOcean\DistortionSurface">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgOcean\FFTOceanTechnique">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgOcean\FFTOceanSurface">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgOcean\FFTOceanSurfaceVBO">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgOcean\FFTSimulation">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgOcean\GodRays">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgOcean\GodRayBlendSurface">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgOcean\MipmapGeometry">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgOcean\MipmapGeometryVBO">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgOcean\OceanScene">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgOcean\OceanTechnique">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgOcean\OceanTile">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgOcean\RandUtils">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgOcean\ScreenAlignedQuad">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgOcean\ShaderManager">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgOcean\SiltEffect">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgOcean\WaterTrochoids">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgOcean\Export">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgOcean\Version">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_ocean_surface.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_ocean_surface.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_ocean_surface_vbo.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_godrays.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_godrays.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_godray_screen_blend.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_godray_screen_blend.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_godray_glare.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_godray_glare.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_silt_quads.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_silt_quads.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_silt_points.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_silt_points.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_streak.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_streak.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_glare_composite.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_glare_composite.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_downsample_glare.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_downsample.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_downsample.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_gaussian.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_gaussian1.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_gaussian2.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_dof_combiner.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_dof_combiner.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_water_distortion.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_water_distortion.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_ocean_scene.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_ocean_scene.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_ocean_scene_lispsm.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_ocean_scene_lispsm.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_heightmap.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\osgOcean_heightmap.frag">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BE916D85-5402-4BE9-A7FE-A70941DEDD55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D6785627-EC4C-45A7-B503-3023AABB6DB6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{BE34EE3F-B96A-4906-B809-A0FD69454D62}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

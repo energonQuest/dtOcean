@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\oceanExample\application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\oceanExample\Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\oceanExample\SkyDome.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\oceanExample\SphereSegment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\OceanExample\SceneEventHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\OceanExample\Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\OceanExample\ScopedTimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\OceanExample\SkyDome.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\OceanExample\SphereSegment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\OceanExample\TextHUD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\src\oceanExample\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\resources\shaders\terrain.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\terrain.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\terrain_lispsm.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\terrain_lispsm.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\skydome.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\resources\shaders\skydome.frag">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BE916D85-5402-4BE9-A7FE-A70941DEDD55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D6785627-EC4C-45A7-B503-3023AABB6DB6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{BE34EE3F-B96A-4906-B809-A0FD69454D62}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
