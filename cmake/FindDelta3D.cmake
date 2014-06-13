@@ -1,0 +1,85 @@
+# Locate Delta3D
+# This module defines:
+# DELTA3D_INCLUDE_DIR, where to find the headers
+# DELTA3D_FOUND
+# DTCORE(_DEBUG)_LIBRARY
+# DTUTIL(_DEBUG)_LIBRARY
+# DTABC(_DEBUG)_LIBRARY
+#
+
+FIND_PATH(DELTA_ROOT src
+          PATHS
+          $ENV{DELTA_ROOT})
+
+#where to find the Delta3D include dir
+FIND_PATH(DELTA3D_INCLUDE_DIR dtCore/dt.h
+          PATHS
+         ${DELTA_ROOT}/inc
+         $ENV{DELTA_ROOT}/inc
+         /usr/local/include
+         /usr/freeware/include     
+)
+
+FIND_PATH(DELTA3D_EXT_DIR inc/al.h
+          PATHS
+         ${DELTA_ROOT}/ext
+         $ENV{DELTA_ROOT}/ext
+)
+
+#where to find the Delta3d lib dir
+SET(DELTA3D_LIB_SEARCH_PATH 
+             ${DELTA_ROOT}/lib
+             ${DELTA_ROOT}/build/lib
+             $ENV{DELTA_LIB}
+             $ENV{DELTA_ROOT}/lib
+             $ENV{DELTA_ROOT}/build/lib
+             /usr/local/lib
+             /usr/lib
+)   
+
+#list of libs that must be found in order to "find" Delta3D
+SET(DELTA3D_LIBRARIES dtCore dtUtil dtABC)
+
+MACRO(FIND_DELTA3D_LIBRARY LIB_VAR LIB_NAME)
+  FIND_LIBRARY(${LIB_VAR} NAMES ${LIB_NAME}
+               PATHS
+               ${DELTA3D_LIB_SEARCH_PATH}
+              )
+ENDMACRO(FIND_DELTA3D_LIBRARY LIB_VAR LIB_NAME)            
+  
+#variable names of the individual Delta3D libraries.  Can be used in application cmakelist.txt files.
+FIND_DELTA3D_LIBRARY(DTABC_LIBRARY             dtABC)
+FIND_DELTA3D_LIBRARY(DTABC_DEBUG_LIBRARY       dtABCD)
+FIND_DELTA3D_LIBRARY(DTACTORS_LIBRARY          dtActors)
+FIND_DELTA3D_LIBRARY(DTACTORS_DEBUG_LIBRARY    dtActorsD)
+#FIND_DELTA3D_LIBRARY(DTAI_LIBRARY              dtAI)
+#FIND_DELTA3D_LIBRARY(DTAI_DEBUG_LIBRARY        dtAID)
+#FIND_DELTA3D_LIBRARY(DTANIM_LIBRARY            dtAnim)
+#FIND_DELTA3D_LIBRARY(DTANIM_DEBUG_LIBRARY      dtAnimD)
+#FIND_DELTA3D_LIBRARY(DTAUDIO_LIBRARY           dtAudio)
+#FIND_DELTA3D_LIBRARY(DTAUDIO_DEBUG_LIBRARY     dtAudioD)
+FIND_DELTA3D_LIBRARY(DTCORE_LIBRARY            dtCore)
+FIND_DELTA3D_LIBRARY(DTCORE_DEBUG_LIBRARY      dtCoreD)
+FIND_DELTA3D_LIBRARY(DTDAL_LIBRARY             dtDAL)
+FIND_DELTA3D_LIBRARY(DTDAL_DEBUG_LIBRARY       dtDALD)
+FIND_DELTA3D_LIBRARY(DTGAME_LIBRARY            dtGame)
+FIND_DELTA3D_LIBRARY(DTGAME_DEBUG_LIBRARY      dtGameD)
+#FIND_DELTA3D_LIBRARY(DTGUI_LIBRARY             dtGui)
+#FIND_DELTA3D_LIBRARY(DTGUI_DEBUG_LIBRARY       dtGuiD)
+#FIND_DELTA3D_LIBRARY(DTINSPECTOR_LIBRARY       dtInspectorQt)
+#FIND_DELTA3D_LIBRARY(DTINSPECTOR_DEBUG_LIBRARY dtInspectorQtd)
+#FIND_DELTA3D_LIBRARY(DTLMS_LIBRARY             dtLMS)
+#FIND_DELTA3D_LIBRARY(DTLMS_DEBUG_LIBRARY       dtLMSd)
+#FIND_DELTA3D_LIBRARY(DTNET_LIBRARY             dtNet)
+#FIND_DELTA3D_LIBRARY(DTNET_DEBUG_LIBRARY       dtNetD)
+#FIND_DELTA3D_LIBRARY(DTNETGM_LIBRARY           dtNetGM)
+#FIND_DELTA3D_LIBRARY(DTNETGM_DEBUG_LIBRARY     dtNetGMD)
+FIND_DELTA3D_LIBRARY(DTUTIL_LIBRARY            dtUtil)
+FIND_DELTA3D_LIBRARY(DTUTIL_DEBUG_LIBRARY      dtUtilD)
+#FIND_DELTA3D_LIBRARY(DTQT_LIBRARY              dtQt)
+#FIND_DELTA3D_LIBRARY(DTQT_LIBRARY_DEBUG        dtQtd)
+
+# handle the QUIETLY and REQUIRED arguments and set DELTA3D_FOUND to TRUE if 
+# all listed variables are TRUE
+INCLUDE(FindPackageHandleStandardArgs)
+FIND_PACKAGE_HANDLE_STANDARD_ARGS(Delta3D DEFAULT_MSG DELTA3D_LIBRARIES DELTA3D_INCLUDE_DIR)
