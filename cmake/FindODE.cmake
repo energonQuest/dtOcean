@@ -14,6 +14,7 @@ FIND_PATH(ODE_INCLUDE_DIR ode/ode.h
     $ENV{ODE_DIR}/include
     $ENV{ODE_DIR}
     ${DELTA3D_EXT_DIR}/inc
+    ${DELTA3D_EXT_DIR}/include
     $ENV{DELTA_ROOT}/ext/inc
     ~/Library/Frameworks
     /Library/Frameworks

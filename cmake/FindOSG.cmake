@@ -16,6 +16,7 @@ FIND_PATH(OSG_INCLUDE_DIR osg/Node
     $ENV{OSGDIR}
     $ENV{OSG_ROOT}/include
     ${DELTA3D_EXT_DIR}/inc
+    ${DELTA3D_EXT_DIR}/include
     $ENV{DELTA_ROOT}/ext/inc
     ~/Library/Frameworks
     /Library/Frameworks

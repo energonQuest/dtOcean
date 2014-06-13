@@ -14,6 +14,7 @@ FIND_PATH(OPENTHREADS_INCLUDE_DIR OpenThreads/Thread
     $ENV{OPENTHREADS_DIR}/include
     $ENV{OPENTHREADS_DIR}
     ${DELTA3D_EXT_DIR}/inc
+    ${DELTA3D_EXT_DIR}/include
     $ENV{DELTA_ROOT}/ext/inc
     $ENV{DELTA_ROOT}
     $ENV{OSG_ROOT}/include

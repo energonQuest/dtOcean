@@ -12,7 +12,7 @@ SET_TARGET_PROPERTIES(${LIB_NAME}
 TARGET_LINK_LIBRARIES(${LIB_NAME}
                       optimized ${DTUTIL_LIBRARY}      debug ${DTUTIL_DEBUG_LIBRARY}
                       optimized ${DTCORE_LIBRARY}      debug ${DTCORE_DEBUG_LIBRARY}
-                      optimized ${DTDAL_LIBRARY}       debug ${DTDAL_DEBUG_LIBRARY}
+                      # optimized ${DTDAL_LIBRARY}       debug ${DTDAL_DEBUG_LIBRARY}
                       optimized ${DTABC_LIBRARY}       debug ${DTABC_DEBUG_LIBRARY}
                       optimized ${DTGAME_LIBRARY}      debug ${DTGAME_DEBUG_LIBRARY}
                       optimized ${DTACTORS_LIBRARY}    debug ${DTACTORS_DEBUG_LIBRARY}
@@ -29,6 +29,20 @@ ENDIF (MSVC)
 
 # little hack to get the .dll into /bin and .lib into /lib
 IF (MSVC_IDE)
-  SET_TARGET_PROPERTIES(${LIB_NAME} PROPERTIES PREFIX "../../../bin/")
-  SET_TARGET_PROPERTIES(${LIB_NAME} PROPERTIES IMPORT_PREFIX "../../")
+  # SET_TARGET_PROPERTIES(${LIB_NAME} PROPERTIES PREFIX "../../../bin/")
+  SET_TARGET_PROPERTIES(${LIB_NAME} PROPERTIES IMPORT_PREFIX "../../../lib/")
 ENDIF (MSVC_IDE)
+
+IF (MSVC)
+  FILE(TO_CMAKE_PATH $ENV{DELTA_BUILD}../../../bin/ path)
+  GET_TARGET_PROPERTY(location ${LIB_NAME} DEBUG_LOCATION)
+  GET_TARGET_PROPERTY(location_r ${LIB_NAME} RELEASE_LOCATION)
+  ADD_CUSTOM_COMMAND(TARGET ${LIB_NAME}
+                     POST_BUILD
+                     COMMAND ${CMAKE_COMMAND} -E copy ${location} ${path}
+                     COMMAND ${CMAKE_COMMAND} -E echo "Copying ${location} to ${path}")
+  ADD_CUSTOM_COMMAND(TARGET ${LIB_NAME}
+                     POST_BUILD
+                     COMMAND ${CMAKE_COMMAND} -E copy ${location_r} ${path}
+                     COMMAND ${CMAKE_COMMAND} -E echo "Copying ${location_r} to ${path}")
+ENDIF (MSVC)

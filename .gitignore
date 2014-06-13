@@ -55,3 +55,4 @@ Thumbs.db
 
 #
 dev/src/deployment/*.exe
+/build_vs2010x86
